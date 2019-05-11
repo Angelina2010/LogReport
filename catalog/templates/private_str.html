@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <h3 class="text-center">Личный кабинет {{ request.user }}</h3>
+    <hr>
+    <h4 class="text-center">
+    Ваши заказы
+    </h4>
+    <table class="table">
+        <tr style="background: #7abaff">
+        <td class="text-center">Номер</td>
+        <td class="text-center">Дата</td>
+        <td class="text-center">Стоимость</td>
+        <td class="text-center">Детали</td>
+        </tr>
+    {% for item in order %}
+        <td class="text-center">{{ item.id }}</td>
+        <td class="text-center">{{ item.date }}</td>
+        <td class="text-center">{{ item.total }}</td>
+        <td class="text-center">
+        <a href="{{ item.get_absolute_url }}"> <button type="button" class="btn btn-primary"> Детали
+        </button></a></td>
+        </tr>
+    {% endfor %}
+    </table>
+
+<!-- Modal -->
+{#<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">#}
+{#  <div class="modal-dialog" role="document">#}
+{#    <div class="modal-content">#}
+{#      <div class="modal-header">#}
+{#        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>#}
+{#        <button type="button" class="close" data-dismiss="modal" aria-label="Close">#}
+{#          <span aria-hidden="true">&times;</span>#}
+{#        </button>#}
+{#      </div>#}
+{#      <div class="modal-body">#}
+{#        ...#}
+{#      </div>#}
+{#      <div class="modal-footer">#}
+{#        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>#}
+{#        <button type="button" class="btn btn-primary">Save changes</button>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
+{#</div>#}
+{#<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>#}
+{#<!-- Модаль -->#}
+{#    {% for item in order %}#}
+{#<div class="modal fade" id="myModal-{{ item.id }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">#}
+{#  <div class="modal-dialog" role="document">#}
+{#    <div class="modal-content">#}
+{#      <div class="modal-header">#}
+{#        <h4 class="modal-title" id="myModalLabel">Заказ № {{ item.id }}</h4>#}
+{#          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>#}
+{#      </div>#}
+{#      <div class="modal-body">#}
+{#      <h5>Товары</h5>#}
+{#        <table class="table">#}
+{#            {% for c in item.items.all %}#}
+{#                {% for i in c.items.all %}#}
+{##}
+{#            <tr>#}
+{#            <td>#}
+{#                {{ i.product.title }}#}
+{#            </td>#}
+{#            <td>#}
+{#                {{ i.qty }} шт.#}
+{#            </td>#}
+{#            <td>#}
+{#                {{ i.item_total}} руб.#}
+{#            </td>#}
+{#            </tr>#}
+{##}
+{#                     {% endfor %}#}
+{#                <tr>#}
+{#            <td></td>#}
+{#            <td><strong>Итого:</strong> </td>#}
+{#            <td><strong>{{ c.cart_total }} руб.</strong></td>#}
+{#            </tr>#}
+{#            {% endfor %}#}
+{#        </table>#}
+{#      <h5>Заказчик</h5>#}
+{#      <p>Логин:  {{ item.user }}</p>#}
+{#      <p>Имя:  {{ item.name }}</p>#}
+{#      <p>Телефон:  {{ item.phone }}</p>#}
+{#      <h5>Компания-поставщик: </h5>#}
+{#      <p>{{ item.owner.full_name }}</p>#}
+{#      <h5>Дата: </h5>#}
+{#      <p>{{ item.date }}</p>#}
+{#      <h5>Комментарии: </h5>#}
+{#      <p>{{ item.comments }}</p>#}
+{#      </div>#}
+{#      <div class="modal-footer">#}
+{#        <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>#}
+{#          <a href="{{ item.get_absolute_url }}"><button type="button" class="btn btn-primary">Накладная</button></a>#}
+{#      </div>#}
+{#    </div>#}
+{#  </div>#}
+{#</div>#}
+{#    {% endfor %}#}
+{#<hr>#}
+{% endblock content %}

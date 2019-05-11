@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <h3 class="text-center">
+    Введите данные о продукте:
+    </h3>
+     <hr>
+   <form action="" method="POST" enctype="multipart/form-data">
+   {% csrf_token %}
+   {{ form|crispy }}
+   <input type="submit" class="btn btn-danger" value="Добавить">
+   </form>
+    <hr>
+{% endblock content %}

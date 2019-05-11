@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <h4 class="text-center">Заказ № {{ order.id }}</h4>
+
+<div class="col-lg-6 col-md-offset-3 card-columns">
+<h4 class="text-center">Товары</h4>
+        <table class="table">
+            {% for c in order.items.all %}
+                {% for i in c.items.all %}
+
+            <tr>
+            <td class="text-center">
+                {{ i.product.title }}
+            </td>
+            <td class="text-center">
+                {{ i.qty }} шт.
+            </td>
+            <td class="text-center">
+                {{ i.item_total}} руб.
+            </td>
+            </tr>
+
+                     {% endfor %}
+                <tr>
+            <td></td>
+            <td class="text-center"><strong>Итого:</strong> </td>
+            <td class="text-center"><strong>{{ c.cart_total }} руб.</strong></td>
+            </tr>
+            {% endfor %}
+        </table>
+
+      <h4 class="text-center">Заказчик:</h4>
+      <h5>Логин:  {{ order.user }}</h5>
+      <h5>Имя:  {{ order.name }}</h5>
+      <h5>Телефон:  {{ order.phone }}</h5>
+      <h4 class="text-center">Компания-поставщик: </h4>
+      <h5>{{ order.owner.full_name }}</h5>
+      <h4 class="text-center">Дата: </h4>
+      <h5>{{ order.date }}</h5>
+      <h4 class="text-center">Комментарии: </h4>
+      <h5>{{ order.comments }}</h5>
+    <br>
+<p class="text-right">
+          <a href="doc/{{ order.id }}"><button type="button" class="btn btn-primary">Документ</button></a></p>
+      </div>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+<title>Категория</title>
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="col-sm-12">
+    <h2>{{ category.name }}</h2>
+    <hr>
+    <div class="row">
+    {% for pr in products_of_category %}
+    <div class='col-sm-4'>
+    <div class="card h-75">
+        <center>
+              <a><img src='{{ pr.image.url }}' style='width: 80%; height: 250px;'></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a>{{ pr.title }}</a>
+                </h4>
+                <p class="card-text-center">{{ pr.description }} </p>
+                  <h5>Цена: <strong>{{ pr.price }} руб</strong></h5>
+                  <p class="text-center"><a href="{{ pr.get_absolute_url }}"><button class="btn-outline-light">Просмотр</button></a></p>
+              </div>
+            </center>
+            </div>
+    </div>
+    {% endfor %}
+    </div>
+    <hr>
+    </div>
+{% endblock content %}

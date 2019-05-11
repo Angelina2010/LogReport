@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<hr>
+    <form action="{% url 'make_order' %}" method="POST">
+    {% csrf_token %}
+
+    <div class="col-sm-12" >
+        {{ form|crispy }}
+    </div>
+    <input type="submit" class="btn btn-danger" value="Оформить">
+
+    </form>
+<hr>
+{% endblock content %}
