@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6019d33f-7294-495c-88a9-fda887ed2377" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LogReport/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/LogReport/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/detail_order.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/templates/private_str.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/private_str.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
@@ -39,13 +37,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="136" column="14" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
+            <state relative-caret-position="316">
+              <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/catalog/templates/private_str.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+              <folding>
+                <element signature="e#1333#1340#1#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,11 +80,6 @@
               <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="44" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static_in_dev/css/animate.css">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -98,10 +115,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
+            <state relative-caret-position="477">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="336" column="36" lean-forward="true" selection-start-line="336" selection-start-column="36" selection-end-line="336" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,21 +175,21 @@
         <option value="$PROJECT_DIR$/catalog/templates/thanks.html" />
         <option value="$PROJECT_DIR$/catalog/templates/product.html" />
         <option value="$PROJECT_DIR$/catalog/templates/order.html" />
-        <option value="$PROJECT_DIR$/catalog/templates/private_str.html" />
         <option value="$PROJECT_DIR$/catalog/templates/detail_order.html" />
         <option value="$PROJECT_DIR$/catalog/templates/login.html" />
         <option value="$PROJECT_DIR$/catalog/templates/registration.html" />
         <option value="$PROJECT_DIR$/catalog/templates/cart.html" />
-        <option value="$PROJECT_DIR$/catalog/urls.py" />
         <option value="$PROJECT_DIR$/catalog/forms.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/catalog/templates/category.html" />
-        <option value="$PROJECT_DIR$/catalog/views.py" />
         <option value="$PROJECT_DIR$/LogReport/settings.py" />
         <option value="$PROJECT_DIR$/catalog/models.py" />
         <option value="$USER_HOME$/Downloads/asentus/HTML/index.html" />
         <option value="$PROJECT_DIR$/catalog/templates/index.html" />
         <option value="$PROJECT_DIR$/catalog/templates/base.html" />
+        <option value="$PROJECT_DIR$/catalog/urls.py" />
+        <option value="$PROJECT_DIR$/catalog/views.py" />
+        <option value="$PROJECT_DIR$/catalog/templates/private_str.html" />
       </list>
     </option>
   </component>
@@ -200,52 +229,6 @@
             </path>
             <path>
               <item name="LogReport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogReport" type="462c0819:PsiDirectoryNode" />
-              <item name="static_in_dev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LogReport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogReport" type="462c0819:PsiDirectoryNode" />
-              <item name="static_in_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LogReport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogReport" type="462c0819:PsiDirectoryNode" />
-              <item name="static_in_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="LogReport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogReport" type="462c0819:PsiDirectoryNode" />
-              <item name="static_in_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-grid.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="LogReport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogReport" type="462c0819:PsiDirectoryNode" />
-              <item name="static_in_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="bootstrap-reboot.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="LogReport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogReport" type="462c0819:PsiDirectoryNode" />
-              <item name="static_in_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="layout.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="LogReport" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LogReport" type="462c0819:PsiDirectoryNode" />
-              <item name="static_in_dev" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="layout-rtl.css" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="LogReport" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -258,22 +241,22 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static_in_dev" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.templateLanguages.PyTemplateLanguageModulesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/static_in_dev" />
-      <recent name="$PROJECT_DIR$/media/product_2" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static_in_dev" />
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/static_in_dev/img/1920x1080" />
       <recent name="$PROJECT_DIR$/static_in_dev/img/clients" />
       <recent name="$PROJECT_DIR$/catalog/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/static_in_dev" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/media/product_2" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -358,7 +341,7 @@
       <workItem from="1557586218086" duration="4201000" />
       <workItem from="1557609237391" duration="3669000" />
       <workItem from="1557613101676" duration="1280000" />
-      <workItem from="1557618555952" duration="594000" />
+      <workItem from="1557618555952" duration="3784000" />
     </task>
     <task id="LOCAL-00001" summary="my_commit">
       <created>1557609932599</created>
@@ -367,11 +350,18 @@
       <option name="project" value="LOCAL" />
       <updated>1557609932599</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="my_commit 2">
+      <created>1557619202722</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1557619202722</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163139000" />
+    <option name="totallyTimeSpent" value="166329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="706" extended-state="0" />
@@ -405,20 +395,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="my_commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="my_commit" />
+    <MESSAGE value="my_commit 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="my_commit 2" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/catalog/migrations/0016_auto_20190510_0617.py" />
-    <entry file="file://$PROJECT_DIR$/../../write/write.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static_in_dev/css/layout.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -489,22 +469,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/private_str.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="70" column="42" lean-forward="true" selection-start-line="70" selection-start-column="42" selection-end-line="70" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/detail_order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static_in_dev/img/clients/02.png">
       <provider selected="true" editor-type-id="images" />
@@ -554,30 +520,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="297" column="5" selection-start-line="297" selection-start-column="5" selection-end-line="297" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/templates/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1320">
-          <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,16 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/templates/category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -635,12 +571,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static_in_dev/static_in_dev/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/static/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="136" column="14" selection-start-line="136" selection-start-column="14" selection-end-line="136" selection-end-column="14" />
+        <state relative-caret-position="316">
+          <caret line="100" lean-forward="true" selection-start-line="100" selection-end-line="100" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/templates/detail_order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="45" column="19" lean-forward="true" selection-start-line="45" selection-start-column="19" selection-end-line="45" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="477">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="336" column="36" lean-forward="true" selection-start-line="336" selection-start-column="36" selection-end-line="336" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="88" column="28" lean-forward="true" selection-start-line="88" selection-start-column="28" selection-end-line="88" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/templates/private_str.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="42" column="8" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="8" />
+          <folding>
+            <element signature="e#1333#1340#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -309,18 +309,18 @@ def delete_product_view(request, id):
         return HttpResponseNotFound("<h2>Person not found</h2>")
 
 
-def detail_order_view(request, order_slug):
+# def detail_order_view(request, order_slug):
+#     order = Order.objects.get(slug=order_slug)
+#     comp = Company.objects.get(user=request.user)
+#     context = {
+#         'order': order,
+#         'comp': comp
+#     }
+#     return render(request, 'detail_order.html', context)
+
+
+def form_doc_view(request, order_slug):
     order = Order.objects.get(slug=order_slug)
-    comp = Company.objects.get(user=request.user)
-    context = {
-        'order': order,
-        'comp': comp
-    }
-    return render(request, 'detail_order.html', context)
-
-
-def form_doc_view(request, slug, id):
-    order = Order.objects.get(id=id)
     path = order.path
     comp = Company.objects.get(user=order.user)
     wb = load_workbook('media/files/sample.xlsx')
