@@ -71,7 +71,7 @@ class Product(models.Model):
     title = models.CharField(max_length=200)
     slug = models.SlugField(blank=True)
     description = models.TextField()
-    image = models.ImageField(upload_to=image_folder)
+    image = models.ImageField( upload_to=image_folder)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     available = models.BooleanField(default=True)
     objects = ProductManager()

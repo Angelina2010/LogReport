@@ -287,10 +287,12 @@ def login_view(request):
 def add_product_view(request):
     form = ProductForm(request.POST, request.FILES)
     if form.is_valid():
+        # product.slug = 'product' + str(product.id)
         product = form.save(commit=False)
         product.owner = Company.objects.get(user=request.user)
         product.save()
-        return HttpResponseRedirect(reverse('thanks'))
+
+        return HttpResponseRedirect(reverse('base'))
     context = {
         'form': form,
     }
@@ -302,10 +304,9 @@ def delete_product_view(request, id):
         product = Product.objects.get(id=id)
         product.available = False
         product.save()
-        return HttpResponseRedirect("/")
+        return HttpResponseRedirect("base")
     except Product.DoesNotExist:
         return HttpResponseNotFound("<h2>Person not found</h2>")
-
 
 
 def detail_order_view(request, order_slug):

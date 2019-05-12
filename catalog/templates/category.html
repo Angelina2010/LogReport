@@ -7,6 +7,7 @@
     <hr>
     <div class="row">
     {% for pr in products_of_category %}
+        {% if pr.available %}
     <div class='col-sm-4'>
     <div class="card h-75">
         <center>
@@ -22,6 +23,7 @@
             </center>
             </div>
     </div>
+        {% endif %}
     {% endfor %}
     </div>
     <hr>

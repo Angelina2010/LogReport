@@ -30,7 +30,7 @@
     <!-- END HEAD -->
 
     <!-- BODY -->
-    <body style="background: #e2e6ea">
+    <body style="background: white">
 
         <!--========== HEADER ==========-->
 
@@ -39,14 +39,10 @@
         <br>
         <header class="header navbar-fixed-top">
             <!-- Navbar -->
-            <nav class="navbar" role="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="menu-container">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
 
                         <!-- Logo -->
                         <div class="logo">
@@ -59,7 +55,7 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
+                     <div class="navbar nav">
                         <div class="menu-container">
                             <ul class="navbar-nav navbar-nav-right">
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="/" style="color: black"><strong>Главная</strong></a></li>
@@ -85,10 +81,6 @@
   <!-- Page Content -->
         <br>
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
  <div class="container">
     {% block content %}
 
@@ -102,6 +94,7 @@
           <a href="{{ cat.get_absolute_url }}" class="list-group-item">{{ cat.name }}</a>
             {% endfor %}
         </div>
+      <hr>
 <a href="{% url 'add' %}" class="text-center"><button class="btn-info">Добавить товар</button></a>
       </div>
       <!-- /.col-lg-3 -->
@@ -141,7 +134,7 @@
          </div>
         <hr>
 
-
+{% endblock %}
   <!-- /.container -->
   <!-- Footer -->
         <br>
@@ -151,7 +144,7 @@
     </div>
     <!-- /.container -->
   </footer>
-        {% endblock %}
+
   <!-- Bootstrap core JavaScript -->
   <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>

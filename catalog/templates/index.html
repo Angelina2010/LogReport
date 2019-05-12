@@ -32,14 +32,10 @@
         <!--========== HEADER ==========-->
         <header class="header navbar-fixed-top">
             <!-- Navbar -->
-            <nav class="navbar" role="navigation">
+           <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="menu-container">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="toggle-icon"></span>
-                        </button>
 
                         <!-- Logo -->
                         <div class="logo">
@@ -52,7 +48,7 @@
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse nav-collapse">
+                    <div class="navbar nav">
                         <div class="menu-container">
                             <ul class="navbar-nav navbar-nav-right">
                                 <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="/" style="color: black"><strong>Главная</strong></a></li>
@@ -103,22 +99,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <img class="img-responsive" src="{% static '' %}img/1920x1080/01.jpg" alt="Slider Image">
-                    <div class="container">
-                        <div class="carousel-centered">
-                            <div class="margin-b-40">
-                                <h2 class="carousel-title">Отчетность</h2>
-                                <p> Автоматизированный процесс построения документации - <br/> просто добавьте данные о Вашей компании!</p>
-                            </div>
-                            {% if request.user.is_authenticated %}
-                            <a href="{% url 'login' %}" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Войти</a>
-                            {% else %}
-                            <a href="{% url 'registration' %}" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Зарегистрироваться</a>
-                            {% endif %}
-                        </div>
-                    </div>
-                </div>
+{#                <div class="item">#}
+{#                    <img class="img-responsive" src="{% static '' %}img/1920x1080/01.jpg" alt="Slider Image">#}
+{#                    <div class="container">#}
+{#                        <div class="carousel-centered">#}
+{#                            <div class="margin-b-40">#}
+{#                                <h2 class="carousel-title">Отчетность</h2>#}
+{#                                <p> Автоматизированный процесс построения документации - <br/> просто добавьте данные о Вашей компании!</p>#}
+{#                            </div>#}
+{#                            {% if request.user.is_authenticated %}#}
+{#                            <a href="{% url 'login' %}" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Войти</a>#}
+{#                            {% else %}#}
+{#                            <a href="{% url 'registration' %}" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Зарегистрироваться</a>#}
+{#                            {% endif %}#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
             </div>
         </div>
         <!--========== SLIDER ==========-->
