@@ -4,8 +4,7 @@
     <list default="true" id="6019d33f-7294-495c-88a9-fda887ed2377" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catalog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog/templates/private_str.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/templates/private_str.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/catalog/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,24 +34,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/templates/private_str.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/catalog/templates/product.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/models.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,11 +76,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/catalog/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="64" lean-forward="true" selection-start-line="17" selection-start-column="64" selection-end-line="18" selection-end-column="76" />
+            <state relative-caret-position="1605">
+              <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/catalog/templates/order.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -119,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4830">
-              <caret line="336" column="36" selection-start-line="336" selection-start-column="36" selection-end-line="336" selection-end-column="36" />
+            <state relative-caret-position="410">
+              <caret line="281" column="15" lean-forward="true" selection-start-line="281" selection-start-column="15" selection-end-line="281" selection-end-column="15" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -178,10 +177,10 @@
         <option value="$PROJECT_DIR$/catalog/templates/index.html" />
         <option value="$PROJECT_DIR$/catalog/templates/base.html" />
         <option value="$PROJECT_DIR$/catalog/urls.py" />
-        <option value="$PROJECT_DIR$/catalog/views.py" />
         <option value="$PROJECT_DIR$/catalog/templates/product.html" />
         <option value="$PROJECT_DIR$/catalog/templates/private_str.html" />
         <option value="$PROJECT_DIR$/catalog/forms.py" />
+        <option value="$PROJECT_DIR$/catalog/views.py" />
       </list>
     </option>
   </component>
@@ -196,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -228,6 +226,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,6 +335,8 @@
       <workItem from="1557618555952" duration="4486000" />
       <workItem from="1557628730325" duration="135000" />
       <workItem from="1557630534246" duration="1150000" />
+      <workItem from="1557633413709" duration="53000" />
+      <workItem from="1557633589494" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="my_commit">
       <created>1557609932599</created>
@@ -365,17 +366,24 @@
       <option name="project" value="LOCAL" />
       <updated>1557628853359</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="my_commit 5">
+      <created>1557633448706</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1557633448706</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168316000" />
+    <option name="totallyTimeSpent" value="168690000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="706" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.10500808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49837133" visible="true" weight="0.18012924" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50162864" side_tool="true" weight="0.20759289" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -406,7 +414,8 @@
     <MESSAGE value="my_commit 2" />
     <MESSAGE value="my_commit 3" />
     <MESSAGE value="my_commit 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="my_commit 4" />
+    <MESSAGE value="my_commit 5" />
+    <option name="LAST_COMMIT_MESSAGE" value="my_commit 5" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static_in_dev/css/layout.css">
@@ -465,13 +474,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -501,13 +503,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static_in_dev/img/1920x1080/02.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="42" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/templates/registration.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -557,6 +552,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/templates/private_str.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/templates/product.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
@@ -598,16 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4830">
-          <caret line="336" column="36" selection-start-line="336" selection-start-column="36" selection-end-line="336" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/catalog/templates/category.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -615,24 +614,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/product.html">
+    <entry file="file://$PROJECT_DIR$/catalog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+        <state relative-caret-position="410">
+          <caret line="281" column="15" lean-forward="true" selection-start-line="281" selection-start-column="15" selection-end-line="281" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catalog/templates/private_str.html">
+    <entry file="file://$PROJECT_DIR$/catalog/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+        <state relative-caret-position="120">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catalog/templates/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/catalog/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="64" lean-forward="true" selection-start-line="17" selection-start-column="64" selection-end-line="18" selection-end-column="76" />
+        <state relative-caret-position="1605">
+          <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>

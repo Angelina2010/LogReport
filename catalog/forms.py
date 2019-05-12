@@ -14,9 +14,9 @@ class LoginForm(forms.Form):
 
     def clean(self):
         user_name = self.cleaned_data['username']
-        password = forms.CharField(widget=forms.PasswordInput)
-        # if not User.objects.filter(username=user_name).exists:
-        #     raise forms.ValidationError('Пользователь не зарегистрирован')
+        password = self.cleaned_data['password']
+        if not User.objects.filter(username=user_name).exists():
+            raise forms.ValidationError('Пользователь не зарегистрирован')
         user = User.objects.get(username=user_name)
         if user and not user.check_password(password):
             raise forms.ValidationError('Неверный пароль')
@@ -97,7 +97,7 @@ class ProductForm(forms.ModelForm):
                                       widget=forms.widgets.Select(attrs={'size': 2}))
     image = forms.ImageField(label='Изображение')
     price = forms.DecimalField(label='Цена', max_digits=10, decimal_places=2)
-    title = forms.CharField(label='Наименование', max_length=200)
+    title = forms.CharField(label='Наименование', max_length=200, help_text='Введите русское название продукта')
     description = forms.CharField(label='Описание', max_length=300, required=False)
 
     class Meta:
