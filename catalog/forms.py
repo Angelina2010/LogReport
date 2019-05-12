@@ -17,9 +17,9 @@ class LoginForm(forms.Form):
         password = forms.CharField(widget=forms.PasswordInput)
         # if not User.objects.filter(username=user_name).exists:
         #     raise forms.ValidationError('Пользователь не зарегистрирован')
-        # user = User.objects.get(username=user_name)
-        # if user and not user.check_password(password):
-        #     raise forms.ValidationError('Неверный пароль')
+        user = User.objects.get(username=user_name)
+        if user and not user.check_password(password):
+            raise forms.ValidationError('Неверный пароль')
 
 
 class RegistrationForm(forms.ModelForm):
@@ -70,17 +70,14 @@ class RegistrationForm(forms.ModelForm):
         self.fields['sign'].help_text = 'Подпись необходима для верификации документов, данные защищены. '
 
     def clean(self):
-        if 'password' in self.cleaned_data and 'password_check' in self.cleaned_data and self.cleaned_data['password'] != self.cleaned_data['password_check']:
-            raise forms.ValidationError("The password does not match ")
-        return self.cleaned_data
-        # user_name = self.cleaned_data['username']
-        # password = self.cleaned_data['password']
-        # password_check = self.cleaned_data['password_check']
-        # if password != password_check:
-        #     raise forms.ValidationError('Ваши пароли не совпадают, попробуйте снова')
+        user_name = self.cleaned_data['username']
+        password = self.cleaned_data['password']
+        password_check = self.cleaned_data['password_check']
+        if password != password_check:
+            raise forms.ValidationError('Ваши пароли не совпадают, попробуйте снова')
 
-        # if User.objects.filter(username=self.cleaned_data['username']).exists:
-        #     raise forms.ValidationError('Пользователь уже зарегистрирован')
+        if User.objects.filter(username=user_name).exists():
+            raise forms.ValidationError('Пользователь с данным логином уже зарегистрирован в системе!')
 
 
 class OrderForm(forms.Form):
