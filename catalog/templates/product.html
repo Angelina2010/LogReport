@@ -6,18 +6,12 @@
     <center>
     <div class="col-lg-6 col-md-12 mb-2">
             <div class="card h-75">
+            <br>
               <a><img src='{{ product.image.url }}' style='width: 60%; height: 250px;'></a>
               <div class="card-body">
                 <h4 class="card-title">
                   <a>{{ product.title }}</a>
-                </h4>
-              </div>
-            </div>
-        </div>
-    <br>
-    <br>
-    <br>
-    <br>
+
                 <p>{{ product.description }}</p>
                   <h5>Цена: <strong>{{ product.price }} руб</strong></h5>
                   {% if request.user.is_authenticated %}
@@ -25,6 +19,10 @@
                   {% else %}
                   <p class="text-center"><a href="{% url "login" %}">Войдите</a> или <a href="{% url "registration" %}">зарегистрируйтесь</a> </p>
              {% endif %}
+                    </h4>
+              </div>
+            </div>
+        </div>
 </div>
             </div>
     </div>
